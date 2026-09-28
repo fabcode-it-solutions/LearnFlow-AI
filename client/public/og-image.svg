@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sm-bear-grad" x1="100" y1="20" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="45%" stop-color="#6D28D9" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+    <linearGradient id="sm-star-grad" x1="100" y1="42" x2="100" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#FACC15" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <linearGradient id="sm-ai-grad" x1="0" y1="0" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  
+  <!-- Subtle dark glow -->
+  <circle cx="950" cy="180" r="350" fill="#7C3AED" opacity="0.12"/>
+  <circle cx="200" cy="500" r="280" fill="#0A84FF" opacity="0.08"/>
+
+  <!-- Logo Mark Lockup -->
+  <g transform="translate(140, 110)">
+    <!-- Ears -->
+    <circle cx="48" cy="38" r="26" fill="url(#sm-bear-grad)" />
+    <circle cx="132" cy="38" r="26" fill="url(#sm-bear-grad)" />
+
+    <!-- Body -->
+    <rect x="26" y="26" width="128" height="132" rx="40" fill="url(#sm-bear-grad)" />
+
+    <!-- Sparkle star -->
+    <path
+      d="M 90 32 Q 90 46 102 46 Q 90 46 90 60 Q 90 46 78 46 Q 90 46 90 32 Z"
+      fill="url(#sm-star-grad)"
+    />
+
+    <!-- Book Left -->
+    <path
+      d="M 86 92 C 72 87, 52 88, 41 92.5 C 39.5 93, 38 94.5, 38 96.5 L 38 134 C 38 136, 39.5 137.5, 41 137 C 53 133, 71 131.8, 86 137.5 Z"
+      fill="#FFFFFF"
+    />
+
+    <!-- Book Right -->
+    <path
+      d="M 94 92 C 108 87, 128 88, 139 92.5 C 140.5 93, 142 94.5, 142 96.5 L 142 134 C 142 136, 140.5 137.5, 139 137 C 127 133, 109 131.8, 94 137.5 Z"
+      fill="#F1F5F9"
+    />
+    <path d="M 90 93 L 90 136.5" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="340" y="195" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">LearnFlow <tspan fill="url(#sm-ai-grad)">AI</tspan></text>
+  <text x="344" y="240" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="400" fill="#8E8E93">Your personal AI study partner</text>
+
+  <!-- Main Headline -->
+  <text x="140" y="360" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">Smart Study Planner</text>
+  <text x="140" y="425" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#8B5CF6">for Focused Students</text>
+
+  <!-- Feature Description -->
+  <text x="140" y="490" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="400" fill="#8E8E93">Adaptive Scheduling · Cloud Notes · Topic Prioritization · Deep Work Sessions</text>
+
+  <!-- Author Badge -->
+  <rect x="140" y="535" width="220" height="42" rx="21" fill="#1C1C1E" stroke="rgba(255,255,255,0.12)"/>
+  <text x="250" y="562" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" fill="#8E8E93" text-anchor="middle">By Aashish Kumar</text>
+</svg>

@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* ── iOS-Refined Dark Design Tokens ─────────────────────────────────────── */
+@theme {
+  --color-canvas:       #0A0A0A;
+  --color-fog:          #0A0A0A;
+  --color-surface:      #141414;
+  --color-surface-card: #1C1C1E;
+  --color-surface-hover:#242424;
+  --color-border:       rgba(255, 255, 255, 0.09);
+
+  --color-ink:          #FFFFFF;
+  --color-ink-60:       #8E8E93;   /* Apple secondary label */
+
+  --color-lamp:         #FFD60A;   /* Apple system yellow */
+  --color-primary:      #0A84FF;   /* Apple system blue */
+  --color-confidence:   #30D158;   /* Apple system green */
+  --color-deadline:     #FF453A;   /* Apple system red */
+  --color-violet:       #0A84FF;   /* Alias to primary — no more purple */
+
+  --font-display: "Inter", sans-serif;
+  --font-body:    "Inter", sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+}
+
+/* ── Base resets ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0A0A0A;
+  min-height: 100vh;
+}
+
+/* ── Subtle dark scrollbars ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.22); }
+
+/* ── Glass panel ─────────────────────────────────────────────────────────── */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* ── Clean Flat Button (Apple iOS style) ─────────────────────────────────── */
+.btn-primary, .ios-btn-primary {
+  background: #0A84FF !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border: none !important;
+  box-shadow: none !important;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+.btn-primary:hover, .ios-btn-primary:hover {
+  opacity: 0.88 !important;
+}
+.btn-primary:active, .ios-btn-primary:active {
+  transform: scale(0.97);
+  opacity: 0.76 !important;
+}
+.btn-primary:disabled, .ios-btn-primary:disabled {
+  opacity: 0.38 !important;
+}
+
+/* ── iOS Card ────────────────────────────────────────────────────────────── */
+.ios-card {
+  background: #1C1C1E;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.15s ease;
+}
+.ios-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
