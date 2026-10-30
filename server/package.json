@@ -1,14 +1,14 @@
 {
   "name": "learnflow-ai-server",
   "version": "1.0.0",
-  "description": "LearnFlow AI — Backend API (Node/Express/MongoDB)",
+  "description": "LearnFlow AI \u2014 Backend API (Node/Express/MongoDB)",
   "author": "Aashish Kumar",
   "license": "ISC",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "node init && nodemon src/index.js",
+    "start": "node init && node src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
@@ -24,4 +24,3 @@
     "mongoose": "^9.9.3"
   }
 }
-
